@@ -1,0 +1,11 @@
+gradio
+torch
+diffusers
+transformers
+huggingface_hub
+accelerate
+safetensors
+opencv-python
+Pillow
+requests
+segment_anything @ git+https://github.com/facebookresearch/segment-anything.git
