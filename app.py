@@ -11,11 +11,11 @@ from huggingface_hub import login
 
 
 # Hugging Face Token from Environment Variable
-HF_TOKEN = os.getenv("HF_TOKEN")
-if not HF_TOKEN:
-    raise ValueError("Please set HF_TOKEN as an environment variable")
+IT_TOKEN = os.getenv("IT_TOKEN")
+if not IT_TOKEN:
+    raise ValueError("Please set IT_TOKEN as an environment variable")
 
-login(token=HF_TOKEN)
+login(token=IT_TOKEN)
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 dtype = torch.float16 if torch.cuda.is_available() else torch.float32
